@@ -557,6 +557,10 @@ body {
   --tw-backdrop-sepia: ;
 }
 
+.ravesh-mini-dialog {
+  width: 97% !important;
+}
+
 .fixed {
   position: fixed;
 }
