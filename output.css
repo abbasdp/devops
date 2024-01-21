@@ -384,14 +384,15 @@ textarea {
 
 input::-moz-placeholder,
 textarea::-moz-placeholder {
+  /* 1 */
+  /* 2 */
   opacity: 1;
   /* 1 */
   color: #9ca3af;
   /* 2 */
 }
 
-input::-moz-placeholder,
-textarea::-moz-placeholder {
+input::-moz-placeholder, textarea::-moz-placeholder {
   opacity: 1;
   /* 1 */
   color: #9ca3af;
@@ -569,8 +570,6 @@ body {
   --tw-backdrop-sepia: ;
 }
 
-
-
 .fixed {
   position: fixed;
 }
@@ -726,7 +725,6 @@ body {
 .min-h-\[400px\] {
   min-height: 400px;
 }
-
 
 .min-h-\[500px\] {
   min-height: 500px;
