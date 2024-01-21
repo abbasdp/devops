@@ -7,6 +7,10 @@
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
 
+.ravesh-mini-dialog {
+  width: 95% !important;
+}
+
 *,
 ::before,
 ::after {
@@ -557,9 +561,7 @@ body {
   --tw-backdrop-sepia: ;
 }
 
-.ravesh-mini-dialog {
-  width: 97% !important;
-}
+
 
 .fixed {
   position: fixed;
