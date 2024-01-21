@@ -6,21 +6,28 @@ window.addEventListener("DOMContentLoaded", () => {
 
 //========= change height of the navbar on scroll
 const navBar = document.querySelector("#navbar");
+const scrollToTopElem = document.getElementById("scrollToTop");
 
 document.addEventListener("scroll", (e) => {
   if (window.scrollY > 100) {
     navBar.classList.remove("h-20");
     navBar.classList.add("h-16");
+
+    // handle show scrolltop
+    scrollToTopElem.classList.remove("hidden");
+    scrollToTopElem.classList.add("flex");
   } else {
     navBar.classList.add("h-20");
     navBar.classList.remove("h-16");
+    // handle remove scrolltop
+    scrollToTopElem.classList.remove("flex");
+    scrollToTopElem.classList.add("hidden");
   }
 });
 //========= click to scoll to top
-
-function scrollToTop() {
+scrollToTop.addEventListener("click", () => {
   window.scrollTo(0, 0);
-}
+});
 //========= timer
 
 const day = document.getElementById("day");
