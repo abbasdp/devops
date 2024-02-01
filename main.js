@@ -36,7 +36,7 @@ const minute = document.getElementById("minute");
 const second = document.getElementById("second");
 
 function countdownTimer() {
-  const difference = +new Date("2024-02-02 24:00") - +new Date();
+  const difference = +new Date("2024-02-02 12:00") - +new Date();
   let remaining = {
     days: 0,
     hours: 0,
